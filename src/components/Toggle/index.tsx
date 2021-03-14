@@ -10,18 +10,16 @@ const Toggle: React.FC = () => {
   }
 
   return (
-    <Container
-      onClick={handleClick}
-      className={`toggle${toggled ? "night" : "day"}`}
-    >
-      <Notch>
+    <Container onClick={handleClick} className={`${toggled ? "night" : ""}`}>
+      <Notch className={`${toggled ? "night" : ""}`}>
         <Crater />
         <Crater />
       </Notch>
       <div>
-        <Small />
-        <Medium />
-        <Large />
+        <Small className={`${toggled ? "night" : ""}`} />
+        <Small className={`${toggled ? "night" : ""}`} />
+        <Medium className={`${toggled ? "night" : ""}`} />
+        <Large className={`${toggled ? "night" : ""}`} />
       </div>
     </Container>
   );
