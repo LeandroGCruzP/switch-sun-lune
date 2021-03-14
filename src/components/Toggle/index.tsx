@@ -1,6 +1,18 @@
 import React, { useState } from "react";
 
-import { Container, Notch, Crater, Small, Medium, Large } from "./styles";
+import {
+  Container,
+  Notch,
+  CraterExtraSmall,
+  CraterSmall,
+  CraterMedium,
+  CraterLarge,
+  ExtraSmall,
+  Small,
+  Medium,
+  Large,
+  ExtraLarge,
+} from "./styles";
 
 const Toggle: React.FC = () => {
   const [toggled, setToggled] = useState(false);
@@ -12,14 +24,17 @@ const Toggle: React.FC = () => {
   return (
     <Container onClick={handleClick} className={`${toggled ? "night" : ""}`}>
       <Notch className={`${toggled ? "night" : ""}`}>
-        <Crater />
-        <Crater />
+        <CraterExtraSmall className={`${toggled ? "night" : ""}`} />
+        <CraterSmall className={`${toggled ? "night" : ""}`} />
+        <CraterMedium className={`${toggled ? "night" : ""}`} />
+        <CraterLarge className={`${toggled ? "night" : ""}`} />
       </Notch>
       <div>
-        <Small className={`${toggled ? "night" : ""}`} />
+        <ExtraSmall className={`${toggled ? "night" : ""}`} />
         <Small className={`${toggled ? "night" : ""}`} />
         <Medium className={`${toggled ? "night" : ""}`} />
         <Large className={`${toggled ? "night" : ""}`} />
+        <ExtraLarge className={`${toggled ? "night" : ""}`} />
       </div>
     </Container>
   );

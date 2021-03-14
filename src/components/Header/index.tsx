@@ -7,7 +7,7 @@ import { Container, Title } from "./styles";
 const Header: React.FC = () => {
   return (
     <Container>
-      <Title>Hi There</Title>
+      <Title>Theme Light vs Dark</Title>
 
       <Toggle />
     </Container>
