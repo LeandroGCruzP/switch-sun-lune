@@ -2,7 +2,7 @@
 
 ## 🏁 Objetive 🏁
 
-### The main goal is to create a Switch component to use in any projects 😁
+### The main goal is to create a Switch component to use in any projects 😁 this project is my standar project to use useState to change state on buttons on projects
 
 
 ## 👷 For the creation of Switch I used 👷
