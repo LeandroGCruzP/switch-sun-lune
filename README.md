@@ -1,4 +1,4 @@
-# Switch Sun vs Moon! 
+# Switch Sun and Moon! 
 
 ## 🏁 Objetive 🏁
 
